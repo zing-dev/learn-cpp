@@ -1,6 +1,6 @@
 # learn-cpp
 
-```
+```c++
 
 #include <iostream>
 
