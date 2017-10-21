@@ -8,3 +8,4 @@ set(SOURCE_FILES main.cpp)
 
 add_executable(learn_cpp ${SOURCE_FILES})
 add_subdirectory(basic)
+add_subdirectory(class)
