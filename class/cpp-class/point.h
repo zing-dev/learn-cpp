@@ -15,6 +15,14 @@ public:
     void setPoint(int x, int y); //在类内对成员函数进行声明
     void printPoint();
 
+    Point() {
+        cout << "this is 构造函数" << endl;
+    }
+
+    ~ Point() {
+        cout << "this is 析构函数" << endl;
+    }
+
 private:
     int xPos;
     int yPos;
@@ -39,5 +47,50 @@ void Point::printPoint()       //实现printPoint函数
 //
 //    return 0;
 //}
+
+
+class Person {
+public:
+    string name;
+    int age;
+
+    Person(string name = "zrx", int age);
+
+    ~Person();
+
+    void setName(string name);
+
+    string getName();
+
+    void setAge(int age);
+
+    int getAge();
+};
+
+Person::Person(string name, int age) {
+    cout << "这是构造函数" << endl;
+    this->name = name;
+    this->age = age;
+}
+
+Person::~Person() {
+    cout << "这是析构函数" << endl;
+}
+
+void Person::setName(string name) {
+    this->name = name;
+}
+
+string Person::getName() {
+    return this->name;
+}
+
+int Person::getAge() {
+    return this->age;
+}
+
+void Person::setAge(int age) {
+    this->age = age;
+}
 
 #endif //LEARN_CPP_POINT_H

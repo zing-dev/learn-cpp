@@ -5,27 +5,44 @@
 
 #include <iostream>
 #include "point.h"
+#include "box.h"
 
 using namespace std;
 
-class Box {
-public:
-    double length;   // 长度
-    double breadth;  // 宽度
-    double height;   // 高度
-    double getVolume() {
-        return length * breadth * height;
-    }
+void box();
 
-private:
-    double d;
-};
+void pointer();
+
+void person();
 
 int main() {
+//    box();
+//    pointer();
+    person();
+    return 0;
+}
+
+void person() {
+    Person person("zing",23);
+    cout << "name : " << person.getName() << endl;
+    cout << "age : " << person.getAge() << endl;
+    person.setAge(22);
+    person.setName("zhangrongxiang");
+    cout << "name : " << person.getName() << endl;
+    cout << "age : " << person.getAge() << endl;
+
+}
+
+void pointer() {
+    Point M;        //用定义好的类创建一个对象 点M
+    M.setPoint(10, 20); //设置 M点 的x,y值
+    M.printPoint();     //输出 M点 的信息
+}
+
+void box() {
     Box Box1;        // 声明 Box1，类型为 Box
     Box Box2;        // 声明 Box2，类型为 Box
-    double volume = 0.0;     // 用于存储体积
-
+    double volume;     // 用于存储体积
     // box 1 详述
     Box1.height = 5.0;
     Box1.length = 6.0;
@@ -44,9 +61,4 @@ int main() {
     // box 2 的体积
     volume = Box2.height * Box2.length * Box2.breadth;
     cout << "Box2 的体积：" << volume << endl;
-
-    Point M;        //用定义好的类创建一个对象 点M
-    M.setPoint(10, 20); //设置 M点 的x,y值
-    M.printPoint();     //输出 M点 的信息
-    return 0;
 }
