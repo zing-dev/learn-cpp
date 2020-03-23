@@ -7,7 +7,6 @@
 #include <iostream>
 #include <iomanip>
 
-
 using namespace std;
 using std::setw;
 

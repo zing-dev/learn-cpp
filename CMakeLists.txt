@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(learn_cpp)
+project(learn-cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES main.cpp)
 
-add_executable(learn_cpp ${SOURCE_FILES})
+add_executable(learn-cpp ${SOURCE_FILES})
 add_subdirectory(basic)
 add_subdirectory(class)
