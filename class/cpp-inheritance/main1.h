@@ -3,8 +3,8 @@
 // File main
 //
 
-#ifndef LEARN_CPP_MAIN_H
-#define LEARN_CPP_MAIN_H
+#ifndef LEARN_CPP_MAIN1_H
+#define LEARN_CPP_MAIN1_H
 // 基类
 #include <iostream>
 
@@ -82,4 +82,4 @@ inline T const& Max (T const& a, T const& b)
     return a < b ? b:a;
 }
 
-#endif //LEARN_CPP_MAIN_H
+#endif //LEARN_CPP_MAIN1_H

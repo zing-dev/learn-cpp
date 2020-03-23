@@ -11,7 +11,7 @@
 using namespace std;
 using std::setw;
 
-double getAverage(int arr[], int size);
+double getAverage(const int arr[], int size);
 int * getRandom();
 
 int main() {
@@ -75,7 +75,7 @@ int main() {
 }
 
 
-double getAverage(int arr[], int size) {
+double getAverage(const int arr[], int size) {
     int i, sum = 0;
     double avg;
     for (i = 0; i < size; ++i) {
@@ -91,11 +91,11 @@ int * getRandom()
     static int  r[10];
 
     // 设置种子
-    srand( (unsigned)time( NULL ) );
-    for (int i = 0; i < 10; ++i)
+    srand( (unsigned)time( nullptr ) );
+    for (int & i : r)
     {
-        r[i] = rand();
-        cout << r[i] << endl;
+        i = rand();
+        cout << i << endl;
     }
 
     return r;

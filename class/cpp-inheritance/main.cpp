@@ -3,7 +3,7 @@
 // File main
 //
 
-#include "main.h"
+#include "main1.h"
 #include <ctime>
 #include <cstdlib>
 #include <zconf.h>
