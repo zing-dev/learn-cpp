@@ -46,3 +46,16 @@ long factorial(long a) {
     else
         return 1;
 }
+
+int operate(int a, int b) {
+    return (a + b);
+}
+
+double operate(double a, double b) {
+    return (a + b);
+}
+
+template<class T>
+extern T sum(T a, T b) {
+    return a + b;
+}

@@ -13,9 +13,17 @@ extern void duplicate(int &a, int &b, int &c);
 
 extern int divide(int a, int b = 2);
 
-extern void odd(int x) ;
+extern void odd(int x);
 
 extern void even(int x);
 
 extern long factorial(long a);
+
+extern int operate(int, int);
+
+extern double operate(double, double);
+
+template<class T>
+ T sum(T t1, T t2);
+
 #endif //LEARN_CPP_FUNCTIONS_H

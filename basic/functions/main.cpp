@@ -7,6 +7,11 @@
 
 using namespace std;
 
+template<class T, class U>
+bool are_equal(T a, U b) {
+    return (a == b);
+}
+
 int main() {
     cout << "================addition=================" << endl;
     cout << addition(1, 2) << endl;
@@ -40,6 +45,31 @@ int main() {
     cout << 3 << "! = " << factorial(3) << endl;
     cout << 4 << "! = " << factorial(4) << endl;
     cout << 5 << "! = " << factorial(5) << endl;
+
+    cout << "================重载==============" << endl;
+    cout << operate(1, 1) << endl;
+    cout << operate(1.1, 1.2) << endl;
+
+    cout << "================template==============" << endl;
+    //int s = sum(1,2);
+    //cout << s << endl;
+    //cout << sum<int>(2, 3) << endl;
+    //cout << sum<float>(1.1, 1.2) << endl;
+
+
+    if (are_equal(10, 10.0))
+        cout << "x and y are equal\n";
+    else
+        cout << "x and y are not equal\n";
+
+    int x{};
+    int y{1};
+    int z{x + y};
+    int z1{z * z + z + y};
+    cout << x << endl;
+    cout << y << endl;
+    cout << z << endl;
+    cout << z1 << endl;
     return 0;
 
 }
