@@ -4,7 +4,7 @@
 //
 #include <iostream>
 #include <ctime>
-#include <zconf.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -15,9 +15,10 @@ void two();
 void three();
 
 int main() {
-//    one();
-//    two();
-    while (1) {
+    one();
+    two();
+    int i = 0;
+    while (i++ < 10) {
         sleep(1);
         three();
     }
