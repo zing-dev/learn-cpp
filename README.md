@@ -1,4 +1,6 @@
-# learn-cpp
+# hello-cpp
+
+> this project for learning cpp
 
 ```c++
 
