@@ -6,7 +6,7 @@
 #include "main1.h"
 #include <ctime>
 #include <cstdlib>
-#include <zconf.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -29,7 +29,7 @@ int main() {
     cout << "Max(i, j): " << Max(i, j) << endl;
     while (1) {
         countdown();
-        usleep(1000000);
+        sleep(1000000);
     }
     return 0;
 }
