@@ -1,0 +1,5 @@
+include_directories(${PROJECT_SOURCE_DIR}/primer/include)
+add_executable(exercise_3_1_a exercise_3_1_a.cpp)
+add_executable(exercise_3_1_b exercise_3_1_b.cpp)
+add_executable(exercise3_2_a exercise3_2_a.cpp)
+add_executable(exercise3_2_b exercise3_2_b.cpp)
