@@ -17,3 +17,8 @@ add_executable(demo3.4 demo3.4.cpp)
 add_executable(exercise3.21 exercise3.21.cpp)
 add_executable(exercise3.22 exercise3.22.cpp)
 add_executable(exercise3.23 exercise3.23.cpp)
+add_executable(exercise3.31 exercise3.31.cpp)
+add_executable(exercise3.32 exercise3.32.cpp)
+add_executable(demo3.5 demo3.5.cpp)
+add_executable(exercise3.35 exercise3.35.cpp)
+
