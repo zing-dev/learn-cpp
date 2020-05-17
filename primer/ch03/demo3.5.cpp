@@ -5,9 +5,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
-
 using namespace std;
-
 int main(int argc, char *argv[]) {
 
     constexpr unsigned sz = 42;
@@ -17,7 +15,7 @@ int main(int argc, char *argv[]) {
 
     int arr2[sz] = {};
     int arr3[] = {1,2,3};
-
+    cout << arr3[0] << endl;
     int(*p)[10] = &arr;
     return 0;
 }
