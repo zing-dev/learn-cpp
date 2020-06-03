@@ -1,13 +1,6 @@
-cmake_minimum_required(VERSION 3.0.2)
-
-project(cpp-class)
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
-set(SOURCE_FILES
-        main.cpp
-        point.h
-        box.h
-        )
-
-add_executable(cpp-class ${SOURCE_FILES})
+add_executable(cpp-class main.cpp point.h box.h)
+add_executable(cpp-circle circle.cpp)
+add_executable(cpp-student student.cpp)
+add_executable(cpp-access access.cpp)
+add_executable(cpp-private private.cpp)
+add_executable(cpp-construction construction.cpp)
