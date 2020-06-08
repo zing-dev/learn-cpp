@@ -1,0 +1,8 @@
+add_executable(template-example example.cpp)
+add_executable(template-example2 example2.cpp)
+add_executable(template-example3 example3.cpp)
+add_executable(template-example4 example4.cpp)
+add_executable(template-example5 example5.cpp)
+add_executable(class-template class-template.cpp)
+add_executable(class-template2 class-template2.cpp)
+add_executable(class-template3 class-template3.cpp)
