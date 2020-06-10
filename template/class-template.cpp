@@ -27,8 +27,7 @@ public:
 
 void test01() {
     // 指定NameType 为string类型，AgeType 为 int类型
-    Person<string,
-    int> P1("孙悟空", 999);
+    Person<string, int> P1("孙悟空", 999);
     P1.showPerson();
 }
 
