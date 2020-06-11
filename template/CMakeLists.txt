@@ -9,3 +9,6 @@ add_executable(class-template3 class-template3.cpp)
 add_executable(template-inherit template-inherit.cpp)
 add_executable(template-inherit2 template-inherit2.cpp)
 add_executable(class-template-friend class-template-friend.cpp)
+
+add_subdirectory(vector)
+add_subdirectory(string)
