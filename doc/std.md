@@ -1,3 +1,5 @@
+## c标准
+
 - c90
 
 - c89
@@ -44,3 +46,4 @@
 
 - gnu++0x
 > GNU dialect of -std=c++0x. This option enables experimental features that may be removed in future versions of GCC.
+ _强调_ 
