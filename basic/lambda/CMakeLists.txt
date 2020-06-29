@@ -1,0 +1,2 @@
+add_executable(lambda_capturing_by_reference lambda_capturing_by_reference.cpp)
+add_executable(lambda_capturing_by_value lambda_capturing_by_value.cpp)
