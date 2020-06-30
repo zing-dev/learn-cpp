@@ -1,7 +1,8 @@
 //
-// Created by zing on 6/29/2020.
+// Created by zing on 6/30/2020.
 //
 
+/* lambda_capturing_by_value_mutable.cpp */
 #include <vector>
 #include <algorithm>
 #include <iostream>
@@ -9,7 +10,7 @@
 using namespace std;
 
 auto main() -> int {
-    cout << "[lambda_capturing_by_reference.cpp]" << endl;
+    cout << "[lambda_capturing_by_value_mutable.cpp]" << endl;
 
     // Initializing a vector containing integer element
     vector<int> vect;
@@ -32,11 +33,11 @@ auto main() -> int {
     int b = 1;
 
     // Capturing value from the two variables
-    // and mutate them
+    // without mutate them
     for_each(
             begin(vect),
             end(vect),
-            [&a, &b](int &x) {
+            [=](int &x) mutable {
                 const int old = x;
                 x *= 2;
                 a = b;
@@ -57,8 +58,5 @@ auto main() -> int {
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
 
-    []() {
-        cout << "=========" << endl;
-    }();
     return 0;
 }

@@ -1,2 +1,10 @@
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+
 add_executable(lambda_capturing_by_reference lambda_capturing_by_reference.cpp)
 add_executable(lambda_capturing_by_value lambda_capturing_by_value.cpp)
+add_executable(lambda_capturing_by_value_mutable lambda_capturing_by_value_mutable.cpp)
+add_executable(lambda_expression_generic lambda_expression_generic.cpp)
+add_executable(lambda_initialization_captures lambda_initialization_captures.cpp)
+add_executable(lambda_multiline_func lambda_multiline_func.cpp)
+add_executable(lambda_returning_value lambda_returning_value.cpp)
+add_executable(lambda_tiny_func lambda_tiny_func.cpp)

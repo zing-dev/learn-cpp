@@ -14,6 +14,7 @@ auto main() -> int {
 
     // Initializing a vector containing integer element
     vector<int> vect;
+    //Attempt to preallocate enough memory for specified number of elements.
     vect.reserve(10);
     for (int i = 0; i < 10; ++i)
         vect.push_back(i);
