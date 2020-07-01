@@ -7,14 +7,12 @@
 
 using namespace std;
 
-void threadProc()
-{
+void threadProc() {
     cout << "Thread ID: ";
     cout << this_thread::get_id() << endl;
 }
 
-auto main() -> int
-{
+auto main() -> int {
     cout << "hello world" << endl;
     thread thread1(threadProc);
     thread1.join();
